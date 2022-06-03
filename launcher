@@ -1,0 +1,8 @@
+<script>
+function hh() {
+window.open("./launcher")
+}
+document.documentElement.requestFullscreen();
+document.addEventListener('beforeunload', hh())
+</script>
+Welcome to Test 1.0. This is no different from any other website, unless you try to close it.
