@@ -6,6 +6,9 @@ document.body.addEventListener('keydown', event => {
     event.preventDefault()
   }
 })
+window.onresize = function() {
+  document.documentElement.requestFullscreen
+}
 
 </script>
 Welcome to Test 1.0. This is no different from any other website, unless you try to close it.
