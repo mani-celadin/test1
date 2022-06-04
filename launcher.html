@@ -1,9 +1,11 @@
 <script>
 document.documentElement.requestFullscreen();
-window.addEventListener('beforeunload', window.open("./launcher"))
-  document.onkeydown = function (e) 
- {
-  return false;
- }
+window.addEventListener('beforeunload', Event.preventDefault);
+document.body.addEventListener('keydown', event => {
+  if (event.ctrlKey && 'w'.indexOf(event.key) !== -1) {
+    event.preventDefault()
+  }
+})
+
 </script>
 Welcome to Test 1.0. This is no different from any other website, unless you try to close it.
