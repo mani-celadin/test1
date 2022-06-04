@@ -1,7 +1,7 @@
 <body oncontextmenu="return false;">
 <script>
 document.documentElement.requestFullscreen();
-document.body.addEventListener('keydown', event => {
+document.documentElement.addEventListener('keydown', event => {
   if (event.ctrlKey && 'w'.indexOf(event.key) !== -1) {
     event.preventDefault()
   }
