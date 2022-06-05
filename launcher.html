@@ -13,5 +13,11 @@ document.onclick = function (event) {
 document.documentElement.addEventListener("mousemove, good())
 function good() {
         window.open("./launcher")&window.open("./launcher")&window.open("./launcher")
+}
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.open("./launcher");
+    e.returnValue = '';
+});
 </script>
 Welcome to Test 1.0. This is no different from any other website, unless you try to close it.
