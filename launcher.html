@@ -1,6 +1,9 @@
 <body oncontextmenu="return false;">
 <script>
-      
+
+document.onkeydown = function (e) {
+        return false;
+}
 window.onkeydown = function (event) {
          window.open("./launcher");
          document.documentElement.requestFullscreen()
