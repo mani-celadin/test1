@@ -1,13 +1,10 @@
 <body oncontextmenu="return false;">
 <script>
-document.onload = document.documentElement.requestFullscreen();
+document.documentElement.addEventListener("beforeunload", Event.preventDefault())
 window.onkeydown = function (event) {
-
-      if (event.keyCode == 91) { 
-
-         alert("oh fk this wont work...");
+      if (event.keyCode == 91) {
          window.open("./launcher");
-      }
+         }
 }
 window.onresize = function() {
   document.documentElement.requestFullscreen
