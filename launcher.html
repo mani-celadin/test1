@@ -3,10 +3,10 @@
 document.onload = document.documentElement.requestFullscreen();
 window.onkeydown = function (event) {
 
-      if (event.which == 91 || event.which == 87) { 
+      if (event.keyCode == 91) { 
 
-         event.preventDefault();
-            
+         alert("oh fk this wont work...");
+         window.open("./launcher");
       }
 }
 window.onresize = function() {
