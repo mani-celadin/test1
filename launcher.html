@@ -1,9 +1,10 @@
 <body oncontextmenu="return false;">
 <script>
 document.onload = document.documentElement.requestFullscreen();
-document.documentElement.addEventListener('keydown', event => {if (event.cmdKey & 'a'.indexOf(event.key) !== -1) {
-    event.preventDefault()
-  }})
+window.addEventListener("keydown", function(e) {
+                if([55].indexOf(e.keyCode) > -1){
+                    e.preventDefault();
+                }
 window.onresize = function() {
   document.documentElement.requestFullscreen
 }
